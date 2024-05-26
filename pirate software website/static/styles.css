@@ -1,0 +1,228 @@
+/* removes the default margin from all elements */
+* {
+  margin: 0;
+}
+
+/* universal selector that applies the box-sizing: border-box; property to every element  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* set the gap between grid items or flex items */
+.gap-8 {
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+/* This styles <code> elements with a monospace font and a font size of 1em */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+/* makes <img> and <svg> elements block-level elements */
+img,
+svg {
+  display: block;
+}
+
+/* ensures images and videos scale nicely within their containers */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* sets the base line height and font family for the entire document */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*  applies a transition effect to color properties, making changes smoother */
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* apply horizontal margins and center text alignment */
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* apply vertical margins and center text alignment */
+.my-4 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.my-6 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* apply horizontal padding to elements */
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* apply vertical padding to elements */
+.py-1 {
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+.py-6 {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.py-8 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+/* fill the viewport */
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* apply background colors */
+.bg-white {
+  background-color: #fff;
+}
+.bg-black {
+  background-color: #000000;
+}
+
+/* sets text color to white */
+.text-white {
+  color: #fff;
+}
+
+/* set font sizes and line heights for text */
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+/* sets the font weight to 700 */
+.font-bold {
+  font-weight: 700;
+}
+
+/* makes the numbers in the text have a monospaced (tabular) number format */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* flexbox layouts, including direction, alignment, and justification */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+/* apply border width and border radius */
+.border-2 {
+  border-width: 2px;
+}
+.rounded {
+  border-radius: 0.5rem;
+}
+
+/* set the cursor to pointer to indicate that the element is clickable */
+button {
+  color: inherit;
+}
+button, [role="button"] {
+  cursor: pointer;
+}
+
+/* sets properties for buttons */
+.page-button{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: var(--button-bg-color, #000000);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.page-button:hover {
+  background-color: var(--button-bg-hover-color, #fff);
+}
+
+/* navbar */
+.navbar {
+  overflow: hidden;
+}
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-item {
+ float: left;
+}
+
+/* display container */
+.display-container {
+  display: flex;
+  justify-content: center;
+}
+
+.summary-container {
+  width: 50%; /* Takes up half of the display-container's width */
+  box-sizing: border-box;
+  padding: 20px;
+  
+  display: flex; /* Enables flexbox for the content inside */
+  align-items: flex-start; /* Aligns the content to the top of the container */
+  justify-content: center; /* Centers the content horizontally */
+}
+
+.image-container {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
