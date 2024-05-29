@@ -31,4 +31,4 @@ jobs:
         with:
           project: "ps-web"
           entrypoint: "main.ts"
-          root: "."
+          root: "./pirate-software-website/pirate-software-website "
