@@ -29,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "ps-web"
+          project: "ravine888-pirate-soft-60"
           entrypoint: "main.ts"
-          root: "./pirate-software-website"
+          root: "."
