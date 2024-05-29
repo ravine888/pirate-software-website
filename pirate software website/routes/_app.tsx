@@ -15,7 +15,7 @@ export default function App({ Component }: PageProps) {
         </style>
 
       </head>
-      <body>
+      <body class="bg-default">
         <Component />
       </body>
     </html>

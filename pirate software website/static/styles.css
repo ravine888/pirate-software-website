@@ -104,11 +104,12 @@ html {
 }
 
 /* apply background colors */
+.bg-default {
+  background-color: #101618;
+}
+
 .bg-white {
   background-color: #fff;
-}
-.bg-black {
-  background-color: #000000;
 }
 
 /* sets text color to white */
